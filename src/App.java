@@ -35,10 +35,12 @@ public class App {
     static double nanoToMilli = 1.0 / 1_000_000;
 
     /**
-     * Código de teste 1. Este método
+     * Código de teste 1. Este método calcula a soma dos restos da divisão por 2 dos elementos em posições pares.
+     * Na prática, este método conta quantos números ímpares existem nos índices 
+     * pares do vetor (0, 2, 4...).
      * 
      * @param vetor Vetor com dados para teste.
-     * @return Uma resposta
+     * @return O total de elementos ímpares encontrados nos índices pares.
      */
     static int codigo1(int[] vetor) {
         int resposta = 0;
@@ -51,10 +53,12 @@ public class App {
     }
 
     /**
-     * Código de teste 2. Este método...
+     * Código de teste 2. Este método executa um processamento acumulativo baseado em divisões sucessivas do limite do vetor.
+     * O método percorre subseções do vetor que diminuem pela metade a cada iteração externa,
+     * resultando em um comportamento semelhante a uma série geométrica.
      * 
      * @param vetor Vetor com dados para teste.
-     * @return Uma resposta que significa....
+     * @return O número total de iterações realizadas pelo laço interno.
      */
     static int codigo2(int[] vetor) {
         int contador = 0;
